@@ -1,0 +1,64 @@
+{
+  "id": "doc123",
+  "name": "Dr. John Smith",
+  "specialty": "Cardiology",
+  "contact": {
+    "phone": "+1234567890",
+    "email": "dr.johnsmith@example.com"
+  },
+  "availability": {
+    "weekdays": [
+      {
+        "day": "Monday",
+        "date": "22/7/24",
+        "slots": [
+          "5 PM",
+          "6 PM",
+          "7 PM"
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "date": "23/7/24",
+        "slots": [
+          "4 PM",
+          "5 PM",
+          "6 PM",
+          "7 PM"
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "date": "24/7/24",
+        "slots": []
+      },
+      {
+        "day": "Thursday",
+        "date": "25/7/24",
+        "slots": [
+          "4 PM",
+          "7 PM"
+        ]
+      },
+      {
+        "day": "Friday",
+        "date": "26/7/24",
+        "slots": [
+          "4 PM",
+          "5 PM",
+          "7 PM"
+        ]
+      }
+    ],
+    "weekends": [
+      {
+        "day": "Saturday",
+        "date": "27/7/24",
+        "slots": [
+          "4 PM",
+          "5 PM"
+        ]
+      }
+    ]
+  }
+}

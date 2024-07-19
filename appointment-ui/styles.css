@@ -1,0 +1,107 @@
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6f7ff; /* Light blue background */
+  padding: 20px;
+  margin: 0;
+}
+
+/* Calendar Container */
+.calendar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px; /* Adds spacing between columns */
+}
+
+/* Day Column Styles */
+.day-column {
+  width: calc(14.28% - 10px); /* 7 columns each with a little margin */
+  background-color: #ffffff;
+  border: 1px solid #d0e0e3; /* Light grey border */
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px; /* Slightly rounded corners */
+  transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.day-column:hover {
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.day-column h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  text-align: center;
+  color: #004d66; /* Darker blue text color */
+}
+
+/* Slot Container */
+.slots {
+  padding: 10px;
+  border-top: 1px solid #d0e0e3;
+  max-height: 300px; /* Limit height */
+  overflow-y: auto; /* Add scroll if too many slots */
+}
+
+/* Slot Styles */
+.slot {
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  background-color: #f0f0f0;
+  border: 1px solid #d0e0e3;
+  border-radius: 3px; /* Rounded corners */
+  transition: background-color 0.2s ease-in-out; /* Smooth color transition */
+}
+
+.slot.available {
+  background-color: #d4edda; /* Light green for available */
+}
+
+.slot.booked {
+  background-color: #f8d7da; /* Light red for booked */
+}
+
+.slot:hover {
+  background-color: #e2f0f4; /* Light blue highlight on hover */
+}
+
+/* Button Container */
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff; /* Blue button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+.button-container button:active {
+  background-color: #003f7f;
+  transform: scale(0.98); /* Slightly shrink on click */
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  .day-column {
+      width: calc(50% - 10px); /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .day-column {
+      width: 100%; /* Full width for very small screens */
+  }
+}
